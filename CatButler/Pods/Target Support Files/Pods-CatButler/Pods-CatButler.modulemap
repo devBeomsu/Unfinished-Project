@@ -1,0 +1,6 @@
+framework module Pods_CatButler {
+  umbrella header "Pods-CatButler-umbrella.h"
+
+  export *
+  module * { export * }
+}

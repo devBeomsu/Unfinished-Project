@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		478C305E3B93D32F2B839A0A /* Pods_CatButler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B890C0A1A73786B3DDBDDF /* Pods_CatButler.framework */; };
+		BF06F5C428C660F0009A8C4C /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06F5C328C660F0009A8C4C /* FeedUploadInput.swift */; };
+		BF06F5C628C6612E009A8C4C /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06F5C528C6612E009A8C4C /* FeedUploadModel.swift */; };
+		BF06F5C828C661AA009A8C4C /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06F5C728C661AA009A8C4C /* FeedUploadDataManager.swift */; };
+		BF06F5CE28C6637D009A8C4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF06F5CD28C6637D009A8C4C /* GoogleService-Info.plist */; };
+		BF06F5D228C6658F009A8C4C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BF06F5D128C6658F009A8C4C /* FirebaseAnalytics */; };
+		BF06F5D528C669CB009A8C4C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BF06F5D428C669CB009A8C4C /* FirebaseStorage */; };
+		BF199D6928C255ED00B5D11F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF199D6828C255ED00B5D11F /* Color+Extension.swift */; };
+		BF25F9AB28C521BB0083363B /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25F9AA28C521BB0083363B /* FeedAPIInput.swift */; };
+		BF25F9AD28C521FE0083363B /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25F9AC28C521FE0083363B /* FeedModel.swift */; };
+		BF25F9AF28C522280083363B /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25F9AE28C522280083363B /* FeedDataManager.swift */; };
+		BF8DEDEF28C4D1820059C327 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DEDED28C4D1820059C327 /* FeedTableViewCell.swift */; };
+		BF8DEDF028C4D1820059C327 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8DEDEE28C4D1820059C327 /* FeedTableViewCell.xib */; };
+		BFA853CF28C4CAC200809586 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA853CE28C4CAC100809586 /* HomeViewController.swift */; };
+		BFC539E728C25C6A008D5269 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC539E628C25C6A008D5269 /* RegisterViewController.swift */; };
+		BFC539FE28C4B481008D5269 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC539FD28C4B481008D5269 /* UserInfo.swift */; };
+		BFDE025B28C228DF00C7EB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE025A28C228DF00C7EB4E /* AppDelegate.swift */; };
+		BFDE025D28C228DF00C7EB4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE025C28C228DF00C7EB4E /* SceneDelegate.swift */; };
+		BFDE026228C228DF00C7EB4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDE026028C228DF00C7EB4E /* Main.storyboard */; };
+		BFDE026428C228E000C7EB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDE026328C228E000C7EB4E /* Assets.xcassets */; };
+		BFDE026728C228E000C7EB4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDE026528C228E000C7EB4E /* LaunchScreen.storyboard */; };
+		BFDE026F28C22D2000C7EB4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE026E28C22D2000C7EB4E /* LoginViewController.swift */; };
+		BFDE027328C22EA900C7EB4E /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = BFDE027228C22EA800C7EB4E /* Fonts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78B890C0A1A73786B3DDBDDF /* Pods_CatButler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatButler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3F93B3478F4E44BE8AC7D6 /* Pods-CatButler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatButler.debug.xcconfig"; path = "Target Support Files/Pods-CatButler/Pods-CatButler.debug.xcconfig"; sourceTree = "<group>"; };
+		8469092036A79B4CA8251015 /* Pods-CatButler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatButler.release.xcconfig"; path = "Target Support Files/Pods-CatButler/Pods-CatButler.release.xcconfig"; sourceTree = "<group>"; };
+		BF06F5C328C660F0009A8C4C /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		BF06F5C528C6612E009A8C4C /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		BF06F5C728C661AA009A8C4C /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		BF06F5CD28C6637D009A8C4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF06F5CF28C6638F009A8C4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF199D6828C255ED00B5D11F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BF25F9AA28C521BB0083363B /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		BF25F9AC28C521FE0083363B /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		BF25F9AE28C522280083363B /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		BF8DEDED28C4D1820059C327 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		BF8DEDEE28C4D1820059C327 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		BFA853CE28C4CAC100809586 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BFC539E628C25C6A008D5269 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BFC539FD28C4B481008D5269 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		BFDE025728C228DF00C7EB4E /* CatButler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatButler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDE025A28C228DF00C7EB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFDE025C28C228DF00C7EB4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BFDE026128C228DF00C7EB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFDE026328C228E000C7EB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFDE026628C228E000C7EB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFDE026828C228E000C7EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFDE026E28C22D2000C7EB4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BFDE027228C22EA800C7EB4E /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../../../../../정대리/빡코딩콘/CatButler/CatButler/Fonts"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFDE025428C228DF00C7EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF06F5D228C6658F009A8C4C /* FirebaseAnalytics in Frameworks */,
+				478C305E3B93D32F2B839A0A /* Pods_CatButler.framework in Frameworks */,
+				BF06F5D528C669CB009A8C4C /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3920E15067FFFBBEA0D8B27E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78B890C0A1A73786B3DDBDDF /* Pods_CatButler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF06F5C228C660CF009A8C4C /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BF06F5C328C660F0009A8C4C /* FeedUploadInput.swift */,
+				BF06F5C528C6612E009A8C4C /* FeedUploadModel.swift */,
+				BF06F5C728C661AA009A8C4C /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		BF25F9A928C5219B0083363B /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BF25F9AA28C521BB0083363B /* FeedAPIInput.swift */,
+				BF25F9AC28C521FE0083363B /* FeedModel.swift */,
+				BF25F9AE28C522280083363B /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
+		BF8DEDEC28C4D15F0059C327 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DEDED28C4D1820059C327 /* FeedTableViewCell.swift */,
+				BF8DEDEE28C4D1820059C327 /* FeedTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BFA853CB28C4CA2700809586 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF06F5C228C660CF009A8C4C /* FeedUploadDataManager */,
+				BFA853CE28C4CAC100809586 /* HomeViewController.swift */,
+				BF25F9A928C5219B0083363B /* FeedDataManager */,
+				BF8DEDEC28C4D15F0059C327 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BFA853CC28C4CA4100809586 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				BFDE026E28C22D2000C7EB4E /* LoginViewController.swift */,
+				BFC539E628C25C6A008D5269 /* RegisterViewController.swift */,
+				BFC539FD28C4B481008D5269 /* UserInfo.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		BFA853CD28C4CA6300809586 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				BF199D6828C255ED00B5D11F /* Color+Extension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		BFDE024E28C228DF00C7EB4E = {
+			isa = PBXGroup;
+			children = (
+				BFDE025928C228DF00C7EB4E /* CatButler */,
+				BF06F5CD28C6637D009A8C4C /* GoogleService-Info.plist */,
+				BFDE025828C228DF00C7EB4E /* Products */,
+				E2790A0A32D0046D50AA56BA /* Pods */,
+				3920E15067FFFBBEA0D8B27E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFDE025828C228DF00C7EB4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFDE025728C228DF00C7EB4E /* CatButler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFDE025928C228DF00C7EB4E /* CatButler */ = {
+			isa = PBXGroup;
+			children = (
+				BF06F5CF28C6638F009A8C4C /* GoogleService-Info.plist */,
+				BFA853CB28C4CA2700809586 /* Home */,
+				BFA853CC28C4CA4100809586 /* Info */,
+				BFDE026028C228DF00C7EB4E /* Main.storyboard */,
+				BFDE026528C228E000C7EB4E /* LaunchScreen.storyboard */,
+				BFDE025A28C228DF00C7EB4E /* AppDelegate.swift */,
+				BFDE025C28C228DF00C7EB4E /* SceneDelegate.swift */,
+				BFDE026328C228E000C7EB4E /* Assets.xcassets */,
+				BFDE026828C228E000C7EB4E /* Info.plist */,
+				BFA853CD28C4CA6300809586 /* Colors */,
+				BFDE027228C22EA800C7EB4E /* Fonts */,
+			);
+			path = CatButler;
+			sourceTree = "<group>";
+		};
+		E2790A0A32D0046D50AA56BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C3F93B3478F4E44BE8AC7D6 /* Pods-CatButler.debug.xcconfig */,
+				8469092036A79B4CA8251015 /* Pods-CatButler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFDE025628C228DF00C7EB4E /* CatButler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDE026B28C228E000C7EB4E /* Build configuration list for PBXNativeTarget "CatButler" */;
+			buildPhases = (
+				854060D9C95D209896E9251F /* [CP] Check Pods Manifest.lock */,
+				BFDE025328C228DF00C7EB4E /* Sources */,
+				BFDE025428C228DF00C7EB4E /* Frameworks */,
+				BFDE025528C228DF00C7EB4E /* Resources */,
+				16047DD47196B0C339AD43C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatButler;
+			packageProductDependencies = (
+				BF06F5D128C6658F009A8C4C /* FirebaseAnalytics */,
+				BF06F5D428C669CB009A8C4C /* FirebaseStorage */,
+			);
+			productName = CatButler;
+			productReference = BFDE025728C228DF00C7EB4E /* CatButler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDE024F28C228DF00C7EB4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BFDE025628C228DF00C7EB4E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BFDE025228C228DF00C7EB4E /* Build configuration list for PBXProject "CatButler" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFDE024E28C228DF00C7EB4E;
+			packageReferences = (
+				BF06F5D028C6658F009A8C4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BF06F5D328C669CB009A8C4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = BFDE025828C228DF00C7EB4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFDE025628C228DF00C7EB4E /* CatButler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFDE025528C228DF00C7EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDE026728C228E000C7EB4E /* LaunchScreen.storyboard in Resources */,
+				BF8DEDF028C4D1820059C327 /* FeedTableViewCell.xib in Resources */,
+				BFDE026428C228E000C7EB4E /* Assets.xcassets in Resources */,
+				BFDE026228C228DF00C7EB4E /* Main.storyboard in Resources */,
+				BFDE027328C22EA900C7EB4E /* Fonts in Resources */,
+				BF06F5CE28C6637D009A8C4C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16047DD47196B0C339AD43C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatButler/Pods-CatButler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatButler/Pods-CatButler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatButler/Pods-CatButler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		854060D9C95D209896E9251F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatButler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFDE025328C228DF00C7EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDE026F28C22D2000C7EB4E /* LoginViewController.swift in Sources */,
+				BF8DEDEF28C4D1820059C327 /* FeedTableViewCell.swift in Sources */,
+				BF199D6928C255ED00B5D11F /* Color+Extension.swift in Sources */,
+				BFC539E728C25C6A008D5269 /* RegisterViewController.swift in Sources */,
+				BFDE025B28C228DF00C7EB4E /* AppDelegate.swift in Sources */,
+				BF06F5C428C660F0009A8C4C /* FeedUploadInput.swift in Sources */,
+				BFC539FE28C4B481008D5269 /* UserInfo.swift in Sources */,
+				BF06F5C628C6612E009A8C4C /* FeedUploadModel.swift in Sources */,
+				BFA853CF28C4CAC200809586 /* HomeViewController.swift in Sources */,
+				BF25F9AD28C521FE0083363B /* FeedModel.swift in Sources */,
+				BFDE025D28C228DF00C7EB4E /* SceneDelegate.swift in Sources */,
+				BF25F9AF28C522280083363B /* FeedDataManager.swift in Sources */,
+				BF06F5C828C661AA009A8C4C /* FeedUploadDataManager.swift in Sources */,
+				BF25F9AB28C521BB0083363B /* FeedAPIInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFDE026028C228DF00C7EB4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFDE026128C228DF00C7EB4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFDE026528C228E000C7EB4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFDE026628C228E000C7EB4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFDE026928C228E000C7EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "집사";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFDE026A28C228E000C7EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "집사";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFDE026C28C228E000C7EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3F93B3478F4E44BE8AC7D6 /* Pods-CatButler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WULLR98GP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatButler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "집사천국";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.devHuni.CatButler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFDE026D28C228E000C7EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8469092036A79B4CA8251015 /* Pods-CatButler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WULLR98GP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatButler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "집사천국";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.devHuni.CatButler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFDE025228C228DF00C7EB4E /* Build configuration list for PBXProject "CatButler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDE026928C228E000C7EB4E /* Debug */,
+				BFDE026A28C228E000C7EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFDE026B28C228E000C7EB4E /* Build configuration list for PBXNativeTarget "CatButler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDE026C28C228E000C7EB4E /* Debug */,
+				BFDE026D28C228E000C7EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF06F5D028C6658F009A8C4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BF06F5D328C669CB009A8C4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF06F5D128C6658F009A8C4C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF06F5D028C6658F009A8C4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BF06F5D428C669CB009A8C4C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF06F5D028C6658F009A8C4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BFDE024F28C228DF00C7EB4E /* Project object */;
+}

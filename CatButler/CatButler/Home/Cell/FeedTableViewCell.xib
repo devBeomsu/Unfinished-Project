@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ONE_Mobile_POP_OTF.otf">
+            <string>ONEMobilePOPOTFRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCell" rowHeight="485" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="CatButler" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YMl-t0-91j">
+                        <rect key="frame" x="10" y="11.999999999999998" width="25" height="21.666666666666664"/>
+                        <color key="backgroundColor" name="Bg"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="6CC-Cl-Kag"/>
+                            <constraint firstAttribute="height" constant="25" id="clp-yf-T8O"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huni" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elr-kb-jfx">
+                        <rect key="frame" x="45" y="15.333333333333332" width="29.333333333333329" height="14.333333333333332"/>
+                        <fontDescription key="fontDescription" name="ONEMobilePOPOTFRegular" family="ONE Mobile POP OTF" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXx-4f-8zY">
+                        <rect key="frame" x="0.0" y="45" width="320" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LXx-4f-8zY" secondAttribute="height" multiplier="1:1" id="54n-HV-Z9A"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCD-wF-kvg">
+                        <rect key="frame" x="204" y="386" width="35" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="h0a-iW-8Bu"/>
+                            <constraint firstAttribute="width" constant="35" id="mfW-oU-dos"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="bookmark1">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                        <state key="selected" image="bookmark2">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                        <connections>
+                            <action selector="markIsFill:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="L93-SG-eET"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-hR-fFt">
+                        <rect key="frame" x="76" y="385" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="gwL-OH-YSg"/>
+                            <constraint firstAttribute="width" constant="40" id="th4-sr-z9J"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="heart">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="default"/>
+                        </state>
+                        <state key="selected" image="heart.fill"/>
+                        <connections>
+                            <action selector="heartIsFill:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RIW-YT-oqT"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-ax-gTf">
+                        <rect key="frame" x="140" y="385" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="53j-zm-2mu"/>
+                            <constraint firstAttribute="height" constant="40" id="nFp-cB-L87"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="share1">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                        <state key="selected" image="share2">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                        <connections>
+                            <action selector="actionIsShare:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JBa-et-f1m"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LXx-4f-8zY" secondAttribute="trailing" id="6mG-qA-Ltl"/>
+                    <constraint firstItem="RKC-hR-fFt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="60" id="7nR-7e-SHd"/>
+                    <constraint firstItem="eCb-ax-gTf" firstAttribute="top" secondItem="LXx-4f-8zY" secondAttribute="bottom" constant="20" id="Jj0-ah-Ack"/>
+                    <constraint firstItem="LXx-4f-8zY" firstAttribute="top" secondItem="YMl-t0-91j" secondAttribute="bottom" constant="10" id="NnI-1w-oHU"/>
+                    <constraint firstItem="YMl-t0-91j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Vf6-EC-fte"/>
+                    <constraint firstItem="eCD-wF-kvg" firstAttribute="centerY" secondItem="eCb-ax-gTf" secondAttribute="centerY" id="bMH-9C-Z0G"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eCD-wF-kvg" secondAttribute="trailing" constant="65" id="cr3-4e-bD3"/>
+                    <constraint firstItem="YMl-t0-91j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eut-MB-5zh"/>
+                    <constraint firstItem="elr-kb-jfx" firstAttribute="leading" secondItem="YMl-t0-91j" secondAttribute="trailing" constant="10" id="jeo-ZL-VZO"/>
+                    <constraint firstItem="eCb-ax-gTf" firstAttribute="centerX" secondItem="LXx-4f-8zY" secondAttribute="centerX" id="oy9-co-vxa"/>
+                    <constraint firstItem="LXx-4f-8zY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v9M-Wx-Ah3"/>
+                    <constraint firstItem="YMl-t0-91j" firstAttribute="centerY" secondItem="elr-kb-jfx" secondAttribute="centerY" id="vcG-wY-tn9"/>
+                    <constraint firstItem="RKC-hR-fFt" firstAttribute="centerY" secondItem="eCb-ax-gTf" secondAttribute="centerY" id="vzS-G7-nbw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="heartIsEmpty" destination="RKC-hR-fFt" id="cts-JK-eEP"/>
+                <outlet property="imageViewFeed" destination="LXx-4f-8zY" id="DMu-BJ-3uV"/>
+                <outlet property="imageViewUserProfile" destination="YMl-t0-91j" id="GDY-uz-U01"/>
+                <outlet property="labelUserName" destination="elr-kb-jfx" id="jDd-XJ-tKC"/>
+                <outlet property="markIsEmpty" destination="eCD-wF-kvg" id="b63-aV-iPH"/>
+                <outlet property="shareButton" destination="eCb-ax-gTf" id="Bf2-5p-pvr"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="254.85781990521326"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark1" width="256" height="256"/>
+        <image name="bookmark2" width="256" height="256"/>
+        <image name="heart" width="256" height="256"/>
+        <image name="heart.fill" width="256" height="256"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="share1" width="256" height="256"/>
+        <image name="share2" width="256" height="256"/>
+        <namedColor name="Bg">
+            <color red="0.60784313725490191" green="0.63137254901960782" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
